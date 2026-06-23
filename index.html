@@ -1,4 +1,182 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Run an AI-Generated Site Audit &mdash; Shopify Partner Playbook</title><meta name="description" content="A repeatable playbook for Shopify Partners: turn a prospect name + domain into an evidence-based audit, sharp why-Shopify hooks, and a ready-to-send outreach sequence that earns the first conversation, using off-the-shelf AI and web tools."><link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/style.css"></head><body><header class="nav"><div class="nav-inner"><a class="nav-brand" href="#top"><svg viewBox="0 0 109 124" aria-hidden="true"><path fill="#95BF47" d="M74.7 14.8c-.1-.5-.5-.8-.9-.8-.4 0-7.6-.2-7.6-.2s-6-5.8-6.6-6.4c-.6-.6-1.8-.4-2.3-.3 0 0-1.1.4-3 1-.3-1-.8-2.3-1.5-3.6C50.5 1.6 47.8 0 44.5 0c-.2 0-.5 0-.7.1-.1-.1-.2-.2-.3-.4C42.1-1.8 40-2 37.4-1.2c-5 1.5-9.9 6.9-13.8 14.4-2.8 5.3-4.9 12-5.5 17.1-5.7 1.8-9.7 3-9.8 3.1-2.9.9-3 1-3.4 3.7C4.6 42.2 0 96.9 0 96.9l59 10.2 25.6-6.4S74.8 15.3 74.7 14.8z"/><path fill="#5E8E3E" d="M73.8 14c-.4 0-7.6-.2-7.6-.2s-6-5.8-6.6-6.4c-.2-.2-.5-.3-.8-.4l-4.4 100.1 25.6-6.4S74.8 15.3 74.7 14.8c-.1-.5-.5-.7-.9-.8z"/><path fill="#FFF" d="M44.9 28.7l-3 8.8s-2.6-1.4-5.8-1.4c-4.7 0-4.9 2.9-4.9 3.7 0 4 10.6 5.6 10.6 15.1 0 7.5-4.8 12.4-11.2 12.4-7.7 0-11.6-4.8-11.6-4.8l2.1-6.8s4 3.5 7.5 3.5c2.3 0 3.2-1.8 3.2-3.1 0-5.3-8.7-5.5-8.7-14.2 0-7.3 5.3-14.4 15.9-14.4 4.1 0 6.1 1.2 6.1 1.2z"/></svg><span>Shopify</span><span class="sub">Partner Enablement</span></a><nav class="nav-links"><a href="#idea">Why</a><a href="#ingredients">Ingredients</a><a href="#agent">1 Agent</a><a href="#method">2 Method</a><a href="#toolchain">3 Tools</a><a href="#discipline">4 Discipline</a><a href="#deliverable">5 Deliverable</a><a href="#prompt">The prompt</a><a href="#pitfalls">Pitfalls</a><a href="#leavebehind">Leave-behind</a></nav></div></header><section id="top" class="hero"><div class="hero-inner"><p class="eyebrow">Shopify Partner Enablement &middot; Training walkthrough</p><h1>Run an AI-generated site audit</h1><p class="lede">Turn a prospect&rsquo;s name and domain into an evidence-based commerce audit, a few sharp &ldquo;why Shopify&rdquo; hooks, and a ready-to-send outreach sequence that earns the first conversation &mdash; using tools your agency already has.</p><div class="hero-tags"><span>Works with Claude Code, Cursor, or ChatGPT</span><span>Off-the-shelf web tools</span><span>No Shopify-internal access needed</span></div><div class="meta"><span>Prepared by <b>Michelle Drawert</b>, Shopify</span><span>A field-tested method, packaged to teach</span></div></div></section><section id="idea" class="section"><div class="wrap"><div class="section-head"><p class="eyebrow">The big idea</p><h2>The method is the asset, not the tools</h2><p class="lede">An AI agent doesn&rsquo;t make an audit credible &mdash; the discipline does. Get these three things right and the specific tools become interchangeable.</p></div><div class="idea"><div class="card"><div class="big">The agent orchestrates; it doesn&rsquo;t measure</div><p>Let the AI fetch pages, run tools, and write the report. The numbers come from real measurement tools, never from the model&rsquo;s imagination.</p></div><div class="card"><div class="big">The methodology is portable</div><p>The phased method &mdash; detect, diagnose, position, pressure-test, then arm the outreach &mdash; works on any platform with any toolchain. That&rsquo;s what you&rsquo;re really learning.</p></div><div class="card"><div class="big">The discipline earns trust</div><p>Every claim labeled, every number sourced, every gap admitted. This is what separates a real audit from confident-sounding AI slop.</p></div></div></div></section><section id="ingredients" class="section alt"><div class="wrap"><div class="section-head"><p class="eyebrow">The four ingredients</p><h2>What you&rsquo;re assembling</h2><p class="lede">Five steps, four moving parts. The rest of this walkthrough takes them one at a time.</p></div><div class="grid g4"><div class="card"><div class="num">STEP 1</div><h3>An agent</h3><p class="muted">Claude Code, Cursor, or a browsing chat assistant to run the play.</p></div><div class="card"><div class="num">STEP 2</div><h3>A method</h3><p class="muted">The phased audit prompt &mdash; the reusable core of the whole thing.</p></div><div class="card"><div class="num">STEP 3</div><h3>A toolchain</h3><p class="muted">Off-the-shelf measurement tools wired into the agent.</p></div><div class="card"><div class="num">STEP 4</div><h3>A deliverable</h3><p class="muted">A client-safe audit plus an internal outreach kit you use to open the conversation.</p></div></div></div></section><section id="agent" class="section"><div class="wrap"><div class="section-head"><div class="kicker"><span class="step">1</span><span class="lbl">Choose your agent</span></div><h2>Pick the tool that fits how your team works</h2><p class="lede">All three can research and draft. They differ in whether they can <em>run</em> the measurement tools for you, which decides how much you do by hand.</p></div><div class="grid g3"><div class="card"><span class="tag">Terminal-based</span><h3>Claude Code</h3><p class="muted">Runs CLI tools (curl, the Lighthouse CLI, Screaming Frog&rsquo;s CLI), edits files, and builds + commits the report. The closest match to a hands-off run.</p><p class="small" style="margin-top:10px;color:var(--green-deep);font-weight:700">Best for technical agencies</p></div><div class="card"><span class="tag">IDE-based</span><h3>Cursor</h3><p class="muted">Same agentic power inside a VS Code-style editor. Great if your developers already live in an IDE and want the report in a repo.</p><p class="small" style="margin-top:10px;color:var(--green-deep);font-weight:700">Best for dev-led teams</p></div><div class="card"><span class="tag">Browsing chat</span><h3>ChatGPT / Claude / Gemini</h3><p class="muted">Strong at research, synthesis, and writing, but can&rsquo;t run local CLI tools &mdash; so you run Lighthouse, Wappalyzer, etc. by hand and paste results in.</p><p class="small" style="margin-top:10px;color:var(--green-deep);font-weight:700">Best for less technical teams</p></div></div><div class="callout"><h4>The one rule that makes any of them safe</h4><p style="margin:0">The agent <b>orchestrates and writes up</b>; it never invents the numbers. If a tool didn&rsquo;t produce a value, the agent labels it a gap. Bake that into the prompt (it&rsquo;s already there) and you avoid the single biggest failure mode of AI audits.</p></div></div></section><section id="method" class="section alt"><div class="wrap"><div class="section-head"><div class="kicker"><span class="step">2</span><span class="lbl">Follow the method</span></div><h2>Twelve phases, one storyline</h2><p class="lede">Detect what you&rsquo;re looking at, diagnose it across every lens, distill a few sharp &ldquo;why Shopify&rdquo; hooks, pressure-test them honestly, then arm the agency with the questions and the outreach to open a conversation. The agent runs all of it in a single pass.</p></div><div class="phases"><div class="phase"><div class="pn">PHASE 0</div><h4>Detect & route</h4><p>Fingerprint platform, segment, and model; flag any revenue channel that transacts off-platform.</p></div><div class="phase"><div class="pn">PHASE 1</div><h4>Business & org</h4><p>What they sell, positioning, size signals, key people, strategic signals.</p></div><div class="phase"><div class="pn">PHASE 2</div><h4>Stack & lock-in</h4><p>Incumbent stack, integration debt, off-site systems of record (ERP/EDI); real switching cost.</p></div><div class="phase"><div class="pn">PHASE 3</div><h4>Performance</h4><p>LCP/CLS/INP/TTFB vs benchmarks; be honest if speed is a strength.</p></div><div class="phase"><div class="pn">PHASE 4</div><h4>Checkout</h4><p>Flow, wallets, payment methods, mobile friction, abandonment drivers.</p></div><div class="phase"><div class="pn">PHASE 5</div><h4>Site / UX</h4><p>Nav, search, PDP/PLP, accessibility, trust signals, merchandising.</p></div><div class="phase"><div class="pn">PHASE 6</div><h4>CRO</h4><p>Top 3-5 highest-impact conversion gaps, ranked.</p></div><div class="phase"><div class="pn">PHASE 7</div><h4>AI readiness</h4><p>Structured data, feeds, discoverability by AI shopping agents.</p></div><div class="phase"><div class="pn">PHASE 8</div><h4>Positioning & hooks</h4><p>Distill 3-5 sharp &ldquo;why Shopify&rdquo; hooks and the one lead wedge. The centerpiece.</p></div><div class="phase"><div class="pn">PHASE 9</div><h4>Honest read</h4><p>The blunt case it might not land, then the fit call: pursue, wedge, or not now.</p></div><div class="phase"><div class="pn">PHASE 10</div><h4>First-conversation kit</h4><p>Lead wedge, ranked hooks, smart questions, and objection responses.</p></div><div class="phase"><div class="pn">PHASE 11</div><h4>Outreach sequence</h4><p>A short, multi-threaded email cadence grounded in the findings.</p></div></div><div class="callout"><h4>The two moves people skip</h4><p style="margin:0"><b>Phase 8 (Positioning &amp; hooks)</b> is the whole point &mdash; a few sharp, evidence-backed reasons to talk, not a feature dump &mdash; and <b>Phase 9 (Honest read)</b> pressure-tests them before you send. Skip them and you get a cheerful audit that doesn&rsquo;t earn a reply.</p></div></div></section><section id="toolchain" class="section"><div class="wrap"><div class="section-head"><div class="kicker"><span class="step">3</span><span class="lbl">Wire up the toolchain</span></div><h2>The external toolchain</h2><p class="lede">Everything I do with Shopify-internal tooling has a public equivalent your agency can use today. This table is the follow-up cheat sheet, too.</p></div><div class="callout"><h4>How the agent uses these</h4><p style="margin:0">By default the agent uses <b>whatever tools it actually has</b> &mdash; web search, curl for HTML/robots/sitemap, Lighthouse plus the PageSpeed/CrUX APIs for Core Web Vitals, axe-core for accessibility &mdash; automatically; you don&rsquo;t have to declare them. For <b>paid or desktop</b> tools (Ahrefs, SEMrush, BuiltWith, full Screaming Frog), run them yourself and paste the summary into the prompt&rsquo;s SUPPLIED INPUTS block &mdash; it treats that as measured fact. Optionally add the <b>Shopify Dev plugin / AI Toolkit</b> so it grounds Shopify capability claims against real docs.</p></div><table class="tooltable"><thead><tr><th>Audit dimension</th><th>What to measure</th><th>Tools</th><th>Output</th></tr></thead><tbody><tr><td data-l="Dimension" class="dim">Tech stack & apps</td><td data-l="Measure">Platform + edition, payments gateway, email/SMS, analytics, search, reviews, subscriptions</td><td data-l="Tools" class="tool"><b>Wappalyzer</b><br><span class="muted small">BuiltWith</span></td><td data-l="Output">Incumbent stack + point-solutions to consolidate</td></tr><tr><td data-l="Dimension" class="dim">Performance / CWV</td><td data-l="Measure">LCP, CLS, INP, TTFB, page weight, render-blocking (state device + throttling)</td><td data-l="Tools" class="tool"><b>PageSpeed Insights, Lighthouse</b><br><span class="muted small">WebPageTest, CrUX field data</span></td><td data-l="Output">Mobile + desktop scores, load waterfall</td></tr><tr><td data-l="Dimension" class="dim">SEO & site crawl</td><td data-l="Measure">Catalog size, titles, meta, canonicals, broken links, redirect map</td><td data-l="Tools" class="tool"><b>Screaming Frog SEO Spider</b><br><span class="muted small">Ahrefs / SEMrush</span></td><td data-l="Output">Crawl report + traffic & keyword estimates</td></tr><tr><td data-l="Dimension" class="dim">Structured data</td><td data-l="Measure">schema.org/Product, Organization, breadcrumbs, product feeds</td><td data-l="Tools" class="tool"><b>Google Rich Results Test</b><br><span class="muted small">Schema Markup Validator</span></td><td data-l="Output">Rich-result + AI-agent eligibility</td></tr><tr><td data-l="Dimension" class="dim">Accessibility</td><td data-l="Measure">Contrast, alt text, ARIA roles, labels, focus order</td><td data-l="Tools" class="tool"><b>axe DevTools, WAVE</b><br><span class="muted small">Lighthouse a11y</span></td><td data-l="Output">Prioritized accessibility issue list</td></tr><tr><td data-l="Dimension" class="dim">Checkout & UX</td><td data-l="Measure">Flow steps, wallets/express, payment methods, mobile friction</td><td data-l="Tools" class="tool"><b>Manual walkthrough</b><br><span class="muted small">Browser DevTools (network + device emulation)</span></td><td data-l="Output">Friction map + abandonment drivers</td></tr><tr><td data-l="Dimension" class="dim">Competitive proof</td><td data-l="Measure">Case studies, comparison pages, named outcomes (with dates)</td><td data-l="Tools" class="tool"><b>Vendor public pages (shopify.com)</b><br><span class="muted small">Perplexity / web search</span></td><td data-l="Output">Sourced claims w/ URLs; vendor claims flagged</td></tr><tr><td data-l="Dimension" class="dim">Report & hosting</td><td data-l="Measure">Assemble and publish the deliverable</td><td data-l="Tools" class="tool"><b>Vercel / Netlify / Cloudflare Pages / GitHub Pages</b><br><span class="muted small">Google Slides / Docs / Notion</span></td><td data-l="Output">One shareable link or a client-ready deck</td></tr></tbody></table><p class="small muted" style="margin-top:14px">Most of these have a free tier strong enough for a single prospect audit (PageSpeed Insights, Lighthouse, WebPageTest, Rich Results Test, WAVE, Screaming Frog up to 500 URLs). Ahrefs/SEMrush and BuiltWith are the main paid ones, and many agencies already license them.</p></div></section><section id="discipline" class="section alt"><div class="wrap"><div class="section-head"><div class="kicker"><span class="step">4</span><span class="lbl">Keep it honest</span></div><h2>The eight guardrails</h2><p class="lede">These travel with the prompt. They&rsquo;re the difference between an audit a prospect trusts and one they quietly discount.</p></div><div class="rails"><div class="rail"><span class="ck"><svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><h4>Label every claim</h4><p>FACT (observed or sourced) vs HYPOTHESIS (interpretation). The reader always knows which is which.</p></div></div><div class="rail"><span class="ck"><svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><h4>Confidence + basis</h4><p>High / Medium / Low on every detection and estimate, each with a one-line reason.</p></div></div><div class="rail"><span class="ck"><svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><h4>Show your method</h4><p>State the tool, device, and throttling behind every number. A metric with no method is noise.</p></div></div><div class="rail"><span class="ck"><svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><h4>Cite a source URL</h4><p>Every external claim links out. Anything you can't source becomes an open item, not an assertion.</p></div></div><div class="rail"><span class="ck"><svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><h4>Never fabricate</h4><p>No invented metrics, contacts, titles, or dates. A blocked tool is a labeled gap, full stop.</p></div></div><div class="rail"><span class="ck"><svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><h4>Validate vendor claims</h4><p>Treat every lift/conversion claim, including the platform's own, as a hypothesis to test in a pilot.</p></div></div><div class="rail"><span class="ck"><svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><h4>Date your evidence</h4><p>Note publication dates on case studies; flag anything older than ~18 months as potentially stale.</p></div></div><div class="rail"><span class="ck"><svg viewBox="0 0 20 20" fill="none"><path d="M4 10.5l4 4 8-9" stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><h4>Capture before you render</h4><p>Finish the full analysis before building the deliverable. Under pressure, compress reasoning, not sections.</p></div></div></div></div></section><section id="deliverable" class="section"><div class="wrap"><div class="section-head"><div class="kicker"><span class="step">5</span><span class="lbl">Ship the deliverable</span></div><h2>Two deliverables, not one</h2><p class="lede">The run produces TWO self-contained artifacts &mdash; keep them separate. A polished client-safe audit carries ~90% of the substance; a short internal kit holds the honest read and the outreach emails. Default to self-contained HTML you can host and screen-share; export to Google Slides or Docs if the buyer wants a deck.</p></div><div class="grid g2" style="margin-bottom:22px"><div class="card"><span class="tag">Internal &middot; never shared</span><h3>Internal outreach kit</h3><p class="muted">A one-pager: the fit call, the lead wedge, the ranked hooks, smart discovery questions, the top objections + responses, and the multi-threaded email sequence. The selling overlay, not a mirror of the audit. Marked &ldquo;do not share with the prospect.&rdquo;</p></div><div class="card"><span class="tag">Prospect-facing</span><h3>Client-safe audit</h3><p class="muted">The findings (Phases 0&ndash;7), the scorecard, and the &ldquo;why Shopify&rdquo; hooks &mdash; framed constructively, leading with the biggest finding. No honest-read, no objection handling, no scoring, no emails. This is the asset you walk a prospect through.</p></div></div><div class="grid g2"><div class="card"><h3>What goes in each</h3><p class="muted" style="margin-bottom:8px"><b>Internal kit:</b> fit call (pursue / wedge / not now), lead wedge, 3&ndash;5 ranked hooks, smart discovery questions, top objections + responses, the honest read, and the multi-threaded email sequence.</p><p class="muted" style="margin:0"><b>Client-safe audit:</b> hero, executive summary (leads with the biggest finding), scorecard (lens | finding | severity), Phases 0&ndash;7 findings, the &ldquo;why Shopify&rdquo; hooks + &ldquo;what changes / what you gain&rdquo; summary, smart questions, a soft next step &mdash; plus your agency&rsquo;s branding.</p></div><div class="card"><h3>What a run produces</h3><p class="muted" style="margin-bottom:10px">Two self-contained HTML files, ready to host or screen-share:</p><p class="muted" style="margin-bottom:8px"><b>Client-safe audit:</b> a hero, a filterable scorecard, the findings framed constructively, and the &ldquo;why Shopify&rdquo; hooks &mdash; leading with the single biggest finding.</p><p class="muted" style="margin:0"><b>Internal kit:</b> the fit call, the lead wedge, the ranked hooks, smart questions, objections + responses, and the outreach email sequence.</p></div></div></div></section><section id="prompt" class="section alt"><div class="wrap"><div class="section-head"><p class="eyebrow">The reusable core</p><h2>The audit prompt</h2><p class="lede">Paste this into your agent, fill in the two inputs (plus any tool exports you already have), and let it run. This is the whole method in one block &mdash; copy it and make it yours.</p></div><div class="promptbox"><div class="promptbar"><span class="dot" style="background:#ff5f57"></span><span class="dot" style="background:#febc2e"></span><span class="dot" style="background:#28c840"></span><span class="t">ai-site-audit.prompt</span><button id="copyPrompt">Copy prompt</button></div><pre id="promptText">You are a senior ecommerce strategist and sales-development partner helping a Shopify Partner
+ShopifyPartner Enablement
+WhyIngredients1 Agent2 Method3 Tools4 Discipline5 DeliverableThe promptPitfallsLeave-behind
+Shopify Partner Enablement · Training walkthrough
+Run an AI-generated site audit
+Turn a prospect’s name and domain into an evidence-based commerce audit, a few sharp “why Shopify” hooks, and a ready-to-send outreach sequence that earns the first conversation — using tools your agency already has.
+Works with Claude Code, Cursor, or ChatGPTOff-the-shelf web toolsNo Shopify-internal access needed
+Prepared by Michelle Drawert, ShopifyA field-tested method, packaged to teach
+The big idea
+The method is the asset, not the tools
+An AI agent doesn’t make an audit credible — the discipline does. Get these three things right and the specific tools become interchangeable.
+The agent orchestrates; it doesn’t measure
+Let the AI fetch pages, run tools, and write the report. The numbers come from real measurement tools, never from the model’s imagination.
+The methodology is portable
+The phased method — detect, diagnose, position, pressure-test, then arm the outreach — works on any platform with any toolchain. That’s what you’re really learning.
+The discipline earns trust
+Every claim labeled, every number sourced, every gap admitted. This is what separates a real audit from confident-sounding AI slop.
+The four ingredients
+What you’re assembling
+Five steps, four moving parts. The rest of this walkthrough takes them one at a time.
+STEP 1
+An agent
+Claude Code, Cursor, or a browsing chat assistant to run the play.
+STEP 2
+A method
+The phased audit prompt — the reusable core of the whole thing.
+STEP 3
+A toolchain
+Off-the-shelf measurement tools wired into the agent.
+STEP 4
+A deliverable
+A client-safe audit plus an internal outreach kit you use to open the conversation.
+1Choose your agent
+Pick the tool that fits how your team works
+All three can research and draft. They differ in whether they can run the measurement tools for you, which decides how much you do by hand.
+Terminal-based
+Claude Code
+Runs CLI tools (curl, the Lighthouse CLI, Screaming Frog’s CLI), edits files, and builds + commits the report. The closest match to a hands-off run.
+Best for technical agencies
+IDE-based
+Cursor
+Same agentic power inside a VS Code-style editor. Great if your developers already live in an IDE and want the report in a repo.
+Best for dev-led teams
+Browsing chat
+ChatGPT / Claude / Gemini
+Strong at research, synthesis, and writing, but can’t run local CLI tools — so you run Lighthouse, Wappalyzer, etc. by hand and paste results in.
+Best for less technical teams
+The one rule that makes any of them safe
+The agent orchestrates and writes up; it never invents the numbers. If a tool didn’t produce a value, the agent labels it a gap. Bake that into the prompt (it’s already there) and you avoid the single biggest failure mode of AI audits.
+2Follow the method
+Twelve phases, one storyline
+Detect what you’re looking at, diagnose it across every lens, distill a few sharp “why Shopify” hooks, pressure-test them honestly, then arm the agency with the questions and the outreach to open a conversation. The agent runs all of it in a single pass.
+PHASE 0
+Detect & route
+Fingerprint platform, segment, and model; flag any revenue channel that transacts off-platform.
+PHASE 1
+Business & org
+What they sell, positioning, size signals, key people, strategic signals.
+PHASE 2
+Stack & lock-in
+Incumbent stack, integration debt, off-site systems of record (ERP/EDI); real switching cost.
+PHASE 3
+Performance
+LCP/CLS/INP/TTFB vs benchmarks; be honest if speed is a strength.
+PHASE 4
+Checkout
+Flow, wallets, payment methods, mobile friction, abandonment drivers.
+PHASE 5
+Site / UX
+Nav, search, PDP/PLP, accessibility, trust signals, merchandising.
+PHASE 6
+CRO
+Top 3-5 highest-impact conversion gaps, ranked.
+PHASE 7
+AI readiness
+Structured data, feeds, discoverability by AI shopping agents.
+PHASE 8
+Positioning & hooks
+Distill 3-5 sharp “why Shopify” hooks and the one lead wedge. The centerpiece.
+PHASE 9
+Honest read
+The blunt case it might not land, then the fit call: pursue, wedge, or not now.
+PHASE 10
+First-conversation kit
+Lead wedge, ranked hooks, smart questions, and objection responses.
+PHASE 11
+Outreach sequence
+A short, multi-threaded email cadence grounded in the findings.
+The two moves people skip
+Phase 8 (Positioning & hooks) is the whole point — a few sharp, evidence-backed reasons to talk, not a feature dump — and Phase 9 (Honest read) pressure-tests them before you send. Skip them and you get a cheerful audit that doesn’t earn a reply.
+3Wire up the toolchain
+The external toolchain
+Everything I do with Shopify-internal tooling has a public equivalent your agency can use today. This table is the follow-up cheat sheet, too.
+How the agent uses these
+By default the agent uses whatever tools it actually has — web search, curl for HTML/robots/sitemap, Lighthouse plus the PageSpeed/CrUX APIs for Core Web Vitals, axe-core for accessibility — automatically; you don’t have to declare them. For paid or desktop tools (Ahrefs, SEMrush, BuiltWith, full Screaming Frog), run them yourself and paste the summary into the prompt’s SUPPLIED INPUTS block — it treats that as measured fact. Optionally add the Shopify Dev plugin / AI Toolkit so it grounds Shopify capability claims against real docs.
+Audit dimension
+What to measure
+Tools
+Output
+Tech stack & apps
+Platform + edition, payments gateway, email/SMS, analytics, search, reviews, subscriptions
+Wappalyzer
+BuiltWith
+Incumbent stack + point-solutions to consolidate
+Performance / CWV
+LCP, CLS, INP, TTFB, page weight, render-blocking (state device + throttling)
+PageSpeed Insights, Lighthouse
+WebPageTest, CrUX field data
+Mobile + desktop scores, load waterfall
+SEO & site crawl
+Catalog size, titles, meta, canonicals, broken links, redirect map
+Screaming Frog SEO Spider
+Ahrefs / SEMrush
+Crawl report + traffic & keyword estimates
+Structured data
+schema.org/Product, Organization, breadcrumbs, product feeds
+Google Rich Results Test
+Schema Markup Validator
+Rich-result + AI-agent eligibility
+Accessibility
+Contrast, alt text, ARIA roles, labels, focus order
+axe DevTools, WAVE
+Lighthouse a11y
+Prioritized accessibility issue list
+Checkout & UX
+Flow steps, wallets/express, payment methods, mobile friction
+Manual walkthrough
+Browser DevTools (network + device emulation)
+Friction map + abandonment drivers
+Competitive proof
+Case studies, comparison pages, named outcomes (with dates)
+Vendor public pages (shopify.com)
+Perplexity / web search
+Sourced claims w/ URLs; vendor claims flagged
+Report & hosting
+Assemble and publish the deliverable
+Vercel / Netlify / Cloudflare Pages / GitHub Pages
+Google Slides / Docs / Notion
+One shareable link or a client-ready deck
+Most of these have a free tier strong enough for a single prospect audit (PageSpeed Insights, Lighthouse, WebPageTest, Rich Results Test, WAVE, Screaming Frog up to 500 URLs). Ahrefs/SEMrush and BuiltWith are the main paid ones, and many agencies already license them.
+4Keep it honest
+The eight guardrails
+These travel with the prompt. They’re the difference between an audit a prospect trusts and one they quietly discount.
+Label every claim
+FACT (observed or sourced) vs HYPOTHESIS (interpretation). The reader always knows which is which.
+Confidence + basis
+High / Medium / Low on every detection and estimate, each with a one-line reason.
+Show your method
+State the tool, device, and throttling behind every number. A metric with no method is noise.
+Cite a source URL
+Every external claim links out. Anything you can't source becomes an open item, not an assertion.
+Never fabricate
+No invented metrics, contacts, titles, or dates. A blocked tool is a labeled gap, full stop.
+Validate vendor claims
+Treat every lift/conversion claim, including the platform's own, as a hypothesis to test in a pilot.
+Date your evidence
+Note publication dates on case studies; flag anything older than ~18 months as potentially stale.
+Capture before you render
+Finish the full analysis before building the deliverable. Under pressure, compress reasoning, not sections.
+5Ship the deliverable
+Two deliverables, not one
+The run produces TWO self-contained artifacts — keep them separate. A polished client-safe audit carries ~90% of the substance; a short internal kit holds the honest read and the outreach emails. Default to self-contained HTML you can host and screen-share; export to Google Slides or Docs if the buyer wants a deck.
+Internal · never shared
+Internal outreach kit
+A one-pager: the fit call, the lead wedge, the ranked hooks, smart discovery questions, the top objections + responses, and the multi-threaded email sequence. The selling overlay, not a mirror of the audit. Marked “do not share with the prospect.”
+Prospect-facing
+Client-safe audit
+The findings (Phases 0–7), the scorecard, and the “why Shopify” hooks — framed constructively, leading with the biggest finding. No honest-read, no objection handling, no scoring, no emails. This is the asset you walk a prospect through.
+What goes in each
+Internal kit: fit call (pursue / wedge / not now), lead wedge, 3–5 ranked hooks, smart discovery questions, top objections + responses, the honest read, and the multi-threaded email sequence.
+Client-safe audit: hero, executive summary (leads with the biggest finding), scorecard (lens | finding | severity), Phases 0–7 findings, the “why Shopify” hooks + “what changes / what you gain” summary, smart questions, a soft next step — plus your agency’s branding.
+What a run produces
+Two self-contained HTML files, ready to host or screen-share:
+Client-safe audit: a hero, a filterable scorecard, the findings framed constructively, and the “why Shopify” hooks — leading with the single biggest finding.
+Internal kit: the fit call, the lead wedge, the ranked hooks, smart questions, objections + responses, and the outreach email sequence.
+The reusable core
+The audit prompt
+Paste this into your agent, fill in the two inputs (plus any tool exports you already have), and let it run. This is the whole method in one block — copy it and make it yours.
+ai-site-audit.promptCopy prompt
+You are a senior ecommerce strategist and sales-development partner helping a Shopify Partner
 agency EARN THE FIRST CONVERSATION with a prospect. From ONLY a prospect's company name and
 primary domain, autonomously research the company and its live site, then produce an
 evidence-based audit whose JOB is to arm the agency with (a) a few sharp, defensible "why
@@ -46,7 +224,7 @@ uses its own live tools (web search, URL fetch, code) automatically; you don't d
 - Tech stack (BuiltWith / Wappalyzer): ...   (example: [BuiltWith, 2026-06-22] Platform: WooCommerce 8.x;
   Payments: Authorize.Net + PayPal; ESP: Klaviyo; Analytics: GA4 + Meta Pixel; Hosting: WP Engine)
 - Crawl (Screaming Frog overview + issues): ...
-- Traffic &amp; keywords (Ahrefs / SEMrush top pages, organic traffic, top keywords): ...
+- Traffic & keywords (Ahrefs / SEMrush top pages, organic traffic, top keywords): ...
 - Performance (PageSpeed / Lighthouse scores + device/throttle, or JSON): ...
 - Anything else, labeled with tool + date: ...
 
@@ -61,7 +239,7 @@ OPERATING MODE
 
 TOOLS (three tiers; use only what the capabilities declaration allows, do not guess)
 Tier 1 - Host-agent native (default, if shell is available):
-  - Live HTML &amp; assets: fetch the homepage and key pages (curl). Read the &lt;head&gt;, scripts,
+  - Live HTML & assets: fetch the homepage and key pages (curl). Read the <head>, scripts,
     link tags, robots.txt, and sitemap.xml; parse JSON-LD / structured data; fingerprint the
     stack from markup signatures.
   - Performance / Core Web Vitals: run Lighthouse (npx lighthouse, headless Chrome) and/or call
@@ -78,7 +256,7 @@ Tier 2 - Shopify Dev plugin / AI Toolkit (if available): use ONLY to ground the 
   functions do not apply to a prospect you have no store access to.
 Tier 3 - Partner-supplied tools:
   - Paste-in exports (above) take precedence over your own estimates for that finding; say so
-    ("upgraded from inferred to measured via &lt;tool&gt;, &lt;date&gt;").
+    ("upgraded from inferred to measured via <tool>, <date>").
   - Agent-run paid tools (Ahrefs / SEMrush / BuiltWith APIs, Screaming Frog CLI): attempt ONLY
     if declared above; otherwise treat as a labeled gap or rely on paste-in.
 
@@ -92,7 +270,7 @@ LABELING + PROVENANCE (use everywhere)
   measurement.
 - Treat ANY vendor conversion/lift claim (including Shopify's own) as a claim to validate.
 
-SEGMENT DEFINITIONS (size tier is almost always inferred -&gt; label HYPOTHESIS + confidence)
+SEGMENT DEFINITIONS (size tier is almost always inferred -> label HYPOTHESIS + confidence)
 Infer from public signals only: catalog size, traffic/order-volume proxies, employee count
 (LinkedIn), number of storefronts/locales/brands, funding/press, stack complexity.
 - SMB: small catalog, single market, founder/small team. Angle: speed, ease, lower TCO than
@@ -104,7 +282,7 @@ Infer from public signals only: catalog size, traffic/order-volume proxies, empl
   velocity, scalability at volume.
 
 PHASES
- 0  Detect, route &amp; find the real story - fingerprint platform/edition, hosting, headless vs
+ 0  Detect, route & find the real story - fingerprint platform/edition, hosting, headless vs
     monolith, payments, and point-solutions; infer size tier (per SEGMENT DEFINITIONS) and model
     (DTC/B2B/marketplace/retail/intl); select which value themes to RUN and which to SKIP, and
     why. CRITICAL: look for any major revenue channel that is REFERENCED on the site but
@@ -113,14 +291,14 @@ PHASES
     candidates, not just gaps - "the biggest part of this business is invisible to the platform"
     is usually the strongest hook. Lead the whole audit with the single biggest structural
     finding, even if it is not a standard lens.
- 1  Business &amp; org profile - what they sell, model, positioning, size signals, public key
+ 1  Business & org profile - what they sell, model, positioning, size signals, public key
     people, strategic signals (press, hiring, expansion, replatform rumors). A relevant new hire
     (e.g. a "Director of Ecommerce") is a buying trigger worth flagging.
- 2  Incumbent stack &amp; lock-in - full stack + custom builds + integration debt; flag what
+ 2  Incumbent stack & lock-in - full stack + custom builds + integration debt; flag what
     creates real switching cost. Also probe for off-site systems of record that shape any move
     (ERP, accounting, inventory/WMS, 3PL, EDI, CRM) - record them as discovery items, not
     assumed facts.
- 3  Performance &amp; Core Web Vitals - LCP/CLS/INP/TTFB (mobile + desktop) with method stated;
+ 3  Performance & Core Web Vitals - LCP/CLS/INP/TTFB (mobile + desktop) with method stated;
     page weight, render-blocking, vs category benchmarks; tie to conversion/SEO. Be honest if
     performance is a strength, not a wedge.
  4  Checkout audit - steps, friction, guest checkout, wallets/express, payment methods, mobile,
@@ -129,9 +307,9 @@ PHASES
     signals, merchandising sophistication.
  6  CRO audit - PDP clarity, social proof, urgency, cart/upsell, search relevance, promos,
     personalization; identify the top 3-5 highest-impact gaps.
- 7  AI / agentic readiness - structured data &amp; feed readiness, discoverability/transactability
+ 7  AI / agentic readiness - structured data & feed readiness, discoverability/transactability
     by AI shopping agents, personalization, data-foundation maturity.
- 8  POSITIONING &amp; HOOKS (the centerpiece) - ONLY the themes activated in Phase 0.
+ 8  POSITIONING & HOOKS (the centerpiece) - ONLY the themes activated in Phase 0.
     PLATFORM CASE FIRST: Before naming any specific capability, write 2-3 sentences establishing
     WHY Shopify is the right platform for this merchant's model and stage - independent of any
     specific feature or plan tier. This platform case should hold whether the merchant's primary
@@ -147,10 +325,10 @@ PHASES
     or POS capabilities.
     For each hook, connect the finding to a specific Shopify capability and the business outcome
     it unlocks. Shopify capabilities to draw from as supporting evidence (not as hook titles):
-    checkout/wallet gaps -&gt; Shop Pay + Shopify Payments; recurring revenue -&gt; Shopify
-    Subscriptions; in-person/events -&gt; Shopify POS; wholesale -&gt; Shopify B2B; international -&gt;
-    Shopify Markets; speed/merchandising limits -&gt; themes + checkout extensibility/Functions or
-    Hydrogen; stack sprawl -&gt; consolidation/TCO. DISTILL into 3-5 sharp "why Shopify"
+    checkout/wallet gaps -> Shop Pay + Shopify Payments; recurring revenue -> Shopify
+    Subscriptions; in-person/events -> Shopify POS; wholesale -> Shopify B2B; international ->
+    Shopify Markets; speed/merchandising limits -> themes + checkout extensibility/Functions or
+    Hydrogen; stack sprawl -> consolidation/TCO. DISTILL into 3-5 sharp "why Shopify"
     positioning hooks and name the SINGLE lead wedge. A strong hook is specific to THIS business,
     leads with the prospect's pain (not a Shopify feature list), implies a cost of standing
     still, and is credible (anchored to a FACT + a dated proof URL from shopify.com). Open by
@@ -226,4 +404,21 @@ QA GATE (self-verify before declaring done)
 8. The agent attempted only declared capabilities; all gaps are labeled, none fabricated.
 9. Outreach emails reference only FACT-labeled observations; sender/voice are placeholders; no
    fabricated metrics, contacts, or dates.
-10. NO 30/60/90 plan, MEDDPICC, or buying-center map anywhere - out of scope at this stage.</pre></div></div></section><section id="pitfalls" class="section"><div class="wrap"><div class="section-head"><p class="eyebrow">Before you run it for real</p><h2>Pitfalls &amp; data privacy</h2></div><div class="grid g2"><div class="card"><h3>Don&rsquo;t feed it confidential data</h3><p class="muted">Auditing a public website is low-risk. But never paste a prospect&rsquo;s private or customer data into a consumer AI tier &mdash; use business/enterprise tiers with model-training turned off.</p></div><div class="card"><h3>Hallucination is real</h3><p class="muted">The labeling + source-URL rules are the antidote. If a claim has no source and no FACT/HYPOTHESIS tag, treat it as suspect and cut it.</p></div><div class="card"><h3>Tools get rate-limited</h3><p class="muted">PageSpeed Insights and others throttle. When a tool is blocked, the run should record a labeled gap and move on, not invent a number to fill the hole.</p></div><div class="card"><h3>Check recency</h3><p class="muted">AI training data and cached pages go stale. Verify case-study dates and live-site facts at run time; flag anything older than ~18 months.</p></div></div></div></section><section id="leavebehind" class="section alt"><div class="wrap"><div class="section-head"><p class="eyebrow">Take it with you</p><h2>The leave-behind</h2><p class="lede">One PDF that combines the toolchain cheat sheet with the reusable prompt and report template &mdash; send it after the session.</p></div><div class="dl"><span class="ic"><svg viewBox="0 0 24 24" fill="none"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 19h14" stroke="#008060" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div class="txt"><h3>AI Site-Audit Playbook &mdash; toolchain + prompt</h3><p>PDF &middot; toolchain cheat sheet, the reusable prompt, the guardrails, and the report structure.</p></div><a class="btn" href="ai-site-audit-playbook.pdf" download>Download PDF</a></div></div></section><footer><div class="wrap"><p style="margin:0">Shopify Partner Enablement &mdash; AI Site-Audit Playbook. Prepared by Michelle Drawert. A teaching resource; tool names are third-party marks of their owners. Treat every vendor lift claim, including Shopify&rsquo;s, as a claim to validate.</p></div></footer><script src="js/app.js"></script></body></html>
+10. NO 30/60/90 plan, MEDDPICC, or buying-center map anywhere - out of scope at this stage.
+Before you run it for real
+Pitfalls & data privacy
+Don’t feed it confidential data
+Auditing a public website is low-risk. But never paste a prospect’s private or customer data into a consumer AI tier — use business/enterprise tiers with model-training turned off.
+Hallucination is real
+The labeling + source-URL rules are the antidote. If a claim has no source and no FACT/HYPOTHESIS tag, treat it as suspect and cut it.
+Tools get rate-limited
+PageSpeed Insights and others throttle. When a tool is blocked, the run should record a labeled gap and move on, not invent a number to fill the hole.
+Check recency
+AI training data and cached pages go stale. Verify case-study dates and live-site facts at run time; flag anything older than ~18 months.
+Take it with you
+The leave-behind
+One PDF that combines the toolchain cheat sheet with the reusable prompt and report template — send it after the session.
+AI Site-Audit Playbook — toolchain + prompt
+PDF · toolchain cheat sheet, the reusable prompt, the guardrails, and the report structure.
+Download PDF
+Shopify Partner Enablement — AI Site-Audit Playbook. Prepared by Michelle Drawert. A teaching resource; tool names are third-party marks of their owners. Treat every vendor lift claim, including Shopify’s, as a claim to validate.
